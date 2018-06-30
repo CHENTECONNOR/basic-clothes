@@ -1,10 +1,11 @@
- var config = {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
+// Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAOeDd3HGLxwmqyEOLkbqjbJTsLwRt_R-c",
+    authDomain: "basic-clothes-publico.firebaseapp.com",
+    databaseURL: "https://basic-clothes-publico.firebaseio.com",
+    projectId: "basic-clothes-publico",
     storageBucket: "",
-    messagingSenderId: ""
+    messagingSenderId: "139679636999"
   };
   firebase.initializeApp(config);
 
@@ -13,7 +14,7 @@
   		var provider = new firebase.auth.GoogleAuthProvider();
 
   		provider.addScope('https://www.googleapis.com/auth/plus.login');
-  		firebase.auth().signInWithPopup(provider).then(function(result){
+      firebase.auth().signInWithPopup(provider).then(function(result){
   			var token = result.credential.accessToken;
   			var user = result.user;
   			var name = result.user.displayName;
@@ -21,8 +22,10 @@
   			var foto = result.user.photoURL;
   			var red = 'Google';
   			location.href = 'login/index.php?name=' + name + '&correo=' + correo + '&foto=' + foto + '&red=' + red;
+        //location.href = './inicio/index.php?name=' + name;
   		}).catch(function(error){
   			var errorCode = error.code;
+       // alert(errorCode);
   			if (errorCode === 'auth/account-exist-with-diferent-credential') {
   				alert('El usuario ya existe');
   			}
@@ -46,7 +49,9 @@
   			var correo = result.user.email;
   			var foto = result.user.photoURL;
   			var red = 'Facebook';
-  			location.href = 'login/index.php?name=' + name + '&correo=' + correo + '&foto=' + foto + '&red=' + red;
+  			//console.log(user);
+        location.href = 'login/index.php?name=' + name + '&correo=' + correo + '&foto=' + foto + '&red=' + red;
+        //location.href = 'inicio/index.php?name=' + name;
   		}).catch(function(error){
   			var errorCode = error.code;
   			if (errorCode === 'auth/account-exist-with-diferent-credential') {
@@ -61,7 +66,10 @@
   document.getElementById('btn-Facebook').addEventListener('click',IngresoFacebook,false);
 
 
-    function IngresoTwitter() {
+  
+
+
+    /*function IngresoTwitter() {
   	if (!firebase.auth().currentUser) {
   		var provider = new firebase.auth.TwitterAuthProvider();
 
@@ -85,7 +93,7 @@
   }
 
   document.getElementById('btn-Twitter').addEventListener('click',IngresoTwitter,false);
-
+*/
 
 
 
