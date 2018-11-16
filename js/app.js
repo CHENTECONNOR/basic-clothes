@@ -1,11 +1,11 @@
 // Initialize Firebase
   var config = {
-    apiKey: "AIzaSyAOeDd3HGLxwmqyEOLkbqjbJTsLwRt_R-c",
-    authDomain: "basic-clothes-publico.firebaseapp.com",
-    databaseURL: "https://basic-clothes-publico.firebaseio.com",
-    projectId: "basic-clothes-publico",
-    storageBucket: "",
-    messagingSenderId: "139679636999"
+    apiKey: "AIzaSyBCtC-yUKItbgI4LU_HbYNo277sgk13hds",
+    authDomain: "basic-clothes.firebaseapp.com",
+    databaseURL: "https://basic-clothes.firebaseio.com",
+    projectId: "basic-clothes",
+    storageBucket: "basic-clothes.appspot.com",
+    messagingSenderId: "686683550155"
   };
   firebase.initializeApp(config);
 

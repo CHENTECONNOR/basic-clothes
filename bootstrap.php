@@ -2,24 +2,45 @@
 use PayPal\Rest\ApiContext;
 use PayPal\Auth\OAuthTokenCredential;
 
-require __DIR__.'/vendor/autoload.php';
+require __DIR__.'./vendor/autoload.php';
 
 $apiContext = new ApiContext(
 	new OAuthTokenCredential(
-		'ASbmZL8wXf2K7V12yOv9eNuZpP7YKNheHyxfN2y_UtDPo6OPrKXgcI8HB1IddrBfcL1f2RZ6ougLvJj_', //Client ID
-		'EJ5ZveuN0V7VKfZit1pmx6UG7hpHbOUV_dKJQAOwTT6J2qYjYRy8912sYVMdibPmQt4sbv25yWwqR3J0'//Secret
+		'AYfFlxELUwFKvojgupFN8rwxRcddo0aIrlT0MinogB1J3YtKclear2XPO7Of_bO-7JHlA-Xshi3nYUO-', //Client ID
+		'EHVyWA5XGK9_V7pbDhmvC_XBHM5ZOQOyuKARg29OA-yLN6S8ESx3cnZD1dXsqU3svQFCoeRLegBTAc9e'//Secret
 	)
 );
 
 $apiContext->setConfig(
 	array(
-		'mode' => 'sandbox',
-		'http.ConnectionTimeOut' => 30,
-		'log.LogEnable' => true,
-		'log.Filename' => 'PayPal.log',
-		'log.LogLevel' => 'DEBUG',
+    	 /**
+    	    * Available option 'sandbox' or 'live'
+    	 */
+    	 'mode' => 'sandbox',
+        /**
+         * Specify the max request time in seconds
+         */
+        'http.ConnectionTimeOut' => 30,
 
-	)
+        /**
+         * Whether want to log to a file
+         */
+        'log.LogEnabled' => true,
+
+        /**
+         * Specify the file that want to write on
+         */
+        'log.FileName' => './paypal.log',
+
+        /**
+         * Available option 'FINE', 'INFO', 'WARN' or 'ERROR'
+         *
+         * Logging is most verbose in the 'FINE' level and decreases as you
+         * proceed towards ERROR
+         */
+        'log.LogLevel' => 'FINE'     
+
+    )  
 );
 
  ?>

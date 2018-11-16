@@ -31,7 +31,7 @@
 							  		<td><?php echo $f['categoria'] ?></td>
 							  		<td><?php echo substr($f['descripcion'] , 0, 100) ?>...</td>
 							  		<td><a href="agregar_imagenes.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-success btn-sm"><span class="material-icons font-weight-bold text-secondary">add</span></a></td>
-							  		<td><a href="editar_producto.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-primary btn-sm"><span class="material-icons font-weight-bold text-primary">edit</span></a></td>
+							  		<td><a href="editar_producto.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-primary btn-sm"><span class="material-icons font-weight-bold text-info">edit</span></a></td>
 							  		<td><a href="#" class="btn btn-outline-danger btn-sm" onclick="bootbox.confirm('Seguro que desea realizar esta accion', function(result){ if (result == true){ location.href='eliminar_producto.php?clave=<?php echo $f['clave'] ?>&foto=<?php echo $f['foto'] ?>&pag=inventario.php';} })"><span class="material-icons font-weight-bold text-danger" >clear</span></a></td>
 							  	</tr>
 							  	<?php 

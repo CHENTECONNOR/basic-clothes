@@ -15,6 +15,7 @@ $sel_compras->execute(array($correo));
 					<div class="col-8">
 						<h4 class="card-title"><?php echo $f_compras['producto'] ?></h4>
 						<h5>Fecha de compra: <?php echo $f_compras['fecha'] ?></h5>
+						<h5>Estatus de compra: <?php echo $f_compras['estatus_compra'] ?></h5>
 						<h5>Pedido: <?php echo $f_compras['estatus_envio'] ?></h5>
 						<h5>Precio: <?php echo "$". number_format($f_compras['precio'],2 ) ?></h5>
 						<h5>Cantidad: <?php echo $f_compras['cantidad'] ?></h5>

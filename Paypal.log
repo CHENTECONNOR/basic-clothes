@@ -1,0 +1,15 @@
+[30-06-2018 22:12:50] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[30-06-2018 22:12:51] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[30-06-2018 22:12:51] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[30-06-2018 22:12:51] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[30-06-2018 22:12:51] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"transactions[0].amount","issue":"Amount cannot be zero"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/docs/api/payments/#errors","debug_id":"9d3630df5a843"}
+[30-06-2018 22:52:56] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[30-06-2018 22:52:56] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[30-06-2018 22:52:56] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[30-06-2018 22:52:57] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[30-06-2018 22:52:57] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"transactions[0].amount","issue":"Amount cannot be zero"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/docs/api/payments/#errors","debug_id":"77b04e9dc2827"}
+[30-06-2018 23:01:35] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/oauth2/token
+[30-06-2018 23:01:36] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 200
+[30-06-2018 23:01:36] PayPal\Core\PayPalHttpConnection : INFO: POST https://api.paypal.com/v1/payments/payment
+[30-06-2018 23:01:36] PayPal\Core\PayPalHttpConnection : INFO: Response Status 	: 400
+[30-06-2018 23:01:36] PayPal\Core\PayPalHttpConnection : ERROR: Got Http response code 400 when accessing https://api.paypal.com/v1/payments/payment. {"name":"VALIDATION_ERROR","details":[{"field":"transactions[0].amount","issue":"Amount cannot be zero"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/docs/api/payments/#errors","debug_id":"fdf3478942e88"}

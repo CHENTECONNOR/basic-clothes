@@ -35,6 +35,15 @@ $sel_des = $con->prepare("SELECT * FROM deseos WHERE correo_user = ? ORDER BY id
 	</div>
 </div>
 
+<div class="modal fade modal_mas" tabindex="-1" role="dialog" >
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div id="res" ></div>
+		</div>
+	</div>
+</div>
+
+<script src="../js/ver_mas.js" ></script>
 <?php include '../assets/footer2.php'; ?>
 </body>
 </html>

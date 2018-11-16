@@ -19,6 +19,7 @@ $total = 0;
 					<h5><?php echo "$". number_format($f['precio'], 2) ?></h5>
 					<h5>Cantidad: <?php echo $f['cantidad'] ?></h5>
 					<h5><?php echo "$". number_format($f['total'], 2) ?></h5>
+					<h5>Estatus Compra: <?php echo $f['estatus_compra'] ?></h5>
 					<p class="card-text" ><?php echo $f['descripcion'] ?></p>
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target=".modal_mas" value="<?php echo $f['clave_producto'] ?>" onclick="modal(this.value)" >Ver mas...</button>
 				</div>
@@ -53,7 +54,7 @@ $total = 0;
 					<input type="text" name="colonia" placeholder="Colonia" class="form-control">
 				</div>
 				<div class="form-group">
-					<input type="text" name="cp" placeholder="Codigo postal" class="form-control">
+					<input type="text" name="cp" placeholder="Codigo postal" pattern="\d{5}" class="form-control">
 				</div>
 				<div class="form-group">
 					<div class="row">
