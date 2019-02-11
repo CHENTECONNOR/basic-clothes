@@ -39,8 +39,8 @@ $payment->setIntent('sale') /*Tipo de Acción*/
 		->setTransactions( [$transaction] );
 
 $redirectUrls = new RedirectUrls();
-$redirectUrls->setReturnUrl('http://localhost:8080/basic-clothes/mensajes/finalizar_compra.php?aprobado=true')
-			->setCancelUrl('http://localhost:8080/basic-clothes/mensajes/cancelado.php');
+$redirectUrls->setReturnUrl('https://basic-clothes.000webhostapp.com/mensajes/finalizar_compra.php?aprobado=true')
+			->setCancelUrl('https://basic-clothes.000webhostapp.com/mensajes/cancelado.php');
 
 $payment->setRedirectUrls($redirectUrls);
 

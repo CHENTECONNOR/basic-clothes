@@ -4,10 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>BASIC CLOTHES|Tienda Online de Ropa, Calzado, Accesorios....</title>
-   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"> -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body{
@@ -72,22 +70,22 @@
       $sel_des = null;
        ?>
        <?php if ($carrito >0 ): ?>
-        <a href="./../inicio/carrito.php" class="nav-link text-white"><i class="fa fa-shopping-cart fa-2x"></i> <span class="badge badge-pill badge-danger"><?php echo $carrito ?></span></a>
+        <a href="carrito.php" class="nav-link text-white"><i class="fa fa-shopping-cart fa-2x"></i> <span class="badge badge-pill badge-danger"><?php echo $carrito ?></span></a>
        <?php else: ?>
-        <a href="./../inicio/carrito.php" class="nav-link text-white"><i class="fa fa-shopping-cart fa-2x"></i></a>
+        <a href="carrito.php" class="nav-link text-white"><i class="fa fa-shopping-cart fa-2x"></i></a>
        <?php endif ?>
        <?php if ($deseos >0 ): ?>
-        <a href="./../inicio/deseos.php" class="nav-link text-white"><i class="fa fa-heart fa-2x text-danger"></i> <span class="badge badge-pill badge-danger"><?php echo $deseos ?></span></a>
+        <a href="deseos.php" class="nav-link text-white"><i class="fa fa-heart fa-2x text-danger"></i> <span class="badge badge-pill badge-danger"><?php echo $deseos ?></span></a>
        <?php else: ?>
-        <a href="./../inicio/deseos.php" class="nav-link"><i class="fa fa-heart fa-2x text-danger"></i></a>
+        <a href="deseos.php" class="nav-link"><i class="fa fa-heart fa-2x text-danger"></i></a>
        <?php endif ?>
       <div class="nav-item dropdown">
         <a href="#" class="nav-link dropdown-toggle text-white" id="perfil" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <img src="<?php echo $_SESSION['foto_user'] ?>" width="40" height="40" class="rounded-circle" >
         </a>
         <div class="dropdown-menu" aria-labelledby="perfil">
-            <a href="./../inicio/deseos.php" class="dropdown-item">Deseos</a>
-            <a href="./../inicio/compras.php" class="dropdown-item">Compras</a>
+            <a href="deseos.php" class="dropdown-item">Deseos</a>
+            <a href="compras.php" class="dropdown-item">Compras</a>
             <a href="#" class="dropdown-item" id="logout">Salir</a>
           </div>
          
