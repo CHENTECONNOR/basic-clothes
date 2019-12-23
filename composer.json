@@ -1,4 +1,9 @@
 {
+    "name": "Basic Clothes",
+    "description": "Ecommerce/Tienda online",
+    "keywords": ["javascript", "php", "html5"],
+    "license": "MIT",
+    "type": "project",
     "require": {
         "paypal/rest-api-sdk-php": "*"
     }
